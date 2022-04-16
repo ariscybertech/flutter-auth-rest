@@ -40,7 +40,7 @@ class _LoginScreen extends State<LoginScreen> with ValidationMixin {
   Widget emailField() {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
-      validator: validateEmail,
+      // validator: validateEmail,
       onSaved: (value) {
         setState(() {
           email = value;
@@ -56,7 +56,7 @@ class _LoginScreen extends State<LoginScreen> with ValidationMixin {
   Widget passwordField() {
     return TextFormField(
       obscureText: true,
-      validator: validatePassword,
+      // validator: validatePassword,
       onSaved: (value) {
         setState(() {
           password = value;
